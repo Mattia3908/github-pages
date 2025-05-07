@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Personale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Benvenuto nel Mio Sito!</h1>
+        <p>Una semplice pagina HTML</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Chi Sono</a>
+        <a href="#">Contatti</a>
+    </nav>
+
+    <main>
+        <h2>Chi sono</h2>
+        <p>Ciao! Mi chiamo Mario e sono uno sviluppatore web appassionato di tecnologia e design.</p>
+
+        <button onclick="saluta()">Clicca per un saluto!</button>
+        <p id="saluto"></p>
+    </main>
+
+    <footer>
+        &copy; 2025 Mario Rossi. Tutti i diritti riservati.
+    </footer>
+
+    <script>
+        function saluta() {
+            document.getElementById('saluto').textContent = 'Ciao! Grazie per aver visitato il mio sito 😊';
+        }
+    </script>
+
+</body>
+</html>
